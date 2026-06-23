@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book III 期末复习答题系统</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 头部 -->
+        <header class="header">
+            <h1>📚 Book III 期末复习系统</h1>
+            <p class="subtitle">期末考试题型模拟 · Part III Vocabulary & Part V Sentence Completion</p>
+        </header>
+
+        <!-- 进度条 -->
+        <div class="progress-section" id="progressSection" style="display:none;">
+            <div class="progress-bar-container">
+                <div class="progress-info">
+                    <span id="progressText">第 1 / 30 题</span>
+                    <span id="scoreText">得分: 0</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 选择题区域 -->
+        <main class="quiz-area" id="quizArea">
+            <!-- 欢迎页 -->
+            <div class="welcome-screen" id="welcomeScreen">
+                <div class="welcome-card">
+                    <h2>欢迎使用期末复习系统</h2>
+                    <div class="exam-info">
+                        <h3>📋 考试结构</h3>
+                        <div class="info-grid">
+                            <div class="info-item part3">
+                                <span class="info-label">Part III Vocabulary</span>
+                                <span class="info-desc">20题 · 单选题 · 每题0.5分 · 共10分</span>
+                                <span class="info-desc">一个句子挖空，从四个书中词汇选一个</span>
+                            </div>
+                            <div class="info-item part5">
+                                <span class="info-label">Part V Sentence Completion</span>
+                                <span class="info-desc">10题 · 填空题 · 每题1分 · 共10分</span>
+                                <span class="info-desc">给出首字母及中文提示，填写完整单词</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="start-buttons">
+                        <button class="btn btn-primary" onclick="startQuiz('part3')">
+                            开始 Part III 练习
+                        </button>
+                        <button class="btn btn-secondary" onclick="startQuiz('part5')">
+                            开始 Part V 练习
+                        </button>
+                        <button class="btn btn-accent" onclick="startQuiz('full')">
+                            全套模拟 (Part III + Part V)
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 题目卡片 -->
+            <div class="question-card" id="questionCard" style="display:none;">
+                <div class="question-header">
+                    <span class="question-type" id="questionType"></span>
+                    <span class="question-number" id="questionNumber"></span>
+                </div>
+                
+                <div class="question-content" id="questionContent"></div>
+                
+                <!-- Part III 选项 -->
+                <div class="options-container" id="optionsContainer"></div>
+                
+                <!-- Part V 输入框 -->
+                <div class="fill-blank-container" id="fillBlankContainer" style="display:none;">
+                    <div class="hint-box" id="hintBox"></div>
+                    <div class="input-group">
+                        <input type="text" id="answerInput" placeholder="请输入完整单词..." autocomplete="off">
+                        <button class="btn btn-check" onclick="checkFillAnswer()">确认</button>
+                    </div>
+                </div>
+
+                <!-- 提交按钮 -->
+                <div class="action-buttons" id="actionButtons">
+                    <button class="btn btn-submit" id="submitBtn" onclick="submitAnswer()" style="display:none;">提交答案</button>
+                    <button class="btn btn-next" id="nextBtn" onclick="nextQuestion()" style="display:none;">下一题 →</button>
+                </div>
+
+                <!-- 反馈区域 -->
+                <div class="feedback" id="feedback" style="display:none;"></div>
+            </div>
+
+            <!-- 结果页面 -->
+            <div class="result-screen" id="resultScreen" style="display:none;">
+                <div class="result-card">
+                    <h2>🎉 练习完成！</h2>
+                    <div class="score-display">
+                        <div class="score-circle" id="scoreCircle">
+                            <span class="score-value" id="scoreValue">0</span>
+                            <span class="score-total">/ 20</span>
+                        </div>
+                        <p class="score-message" id="scoreMessage"></p>
+                    </div>
+                    <div class="result-details" id="resultDetails"></div>
+                    <div class="result-actions">
+                        <button class="btn btn-primary" onclick="reviewWrongAnswers()">查看错题</button>
+                        <button class="btn btn-secondary" onclick="restartQuiz()">重新练习</button>
+                        <button class="btn btn-accent" onclick="backToHome()">返回首页</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="part3_questions.js"></script>
+    <script src="part5_questions.js"></script>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
