@@ -139,6 +139,15 @@ body {
     font-weight: bold;
 }
 
+.en2cn-word {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    padding: 20px 0;
+    letter-spacing: 1px;
+}
+
 /* ========== 选项 ========== */
 .options-container {
     display: grid;
@@ -300,11 +309,27 @@ body {
     color: white;
 }
 
+.btn-prev {
+    background: #f0f0f0;
+    color: #555;
+    border: 2px solid #ddd;
+}
+
+.btn-prev:hover {
+    background: #e0e0e0;
+    color: #333;
+}
+
 .action-buttons {
     display: flex;
     gap: 10px;
     margin-top: 20px;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.action-buttons .btn-prev {
+    margin-right: auto;
 }
 
 /* ========== 反馈 ========== */

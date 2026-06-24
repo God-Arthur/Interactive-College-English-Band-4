@@ -30,6 +30,7 @@ const hintBox = $('hintBox');
 const answerInput = $('answerInput');
 const submitBtn = $('submitBtn');
 const nextBtn = $('nextBtn');
+const prevBtn = $('prevBtn');
 const feedback = $('feedback');
 const progressText = $('progressText');
 const progressFill = $('progressFill');
@@ -69,10 +70,25 @@ function startQuiz(mode) {
     } else if (mode === 'part5') {
         questions = quizData.sentenceCompletion.map(q => ({ ...q, type: 'part5' }));
         state.isPart5Mode = true;
-    } else if (mode === 'full') {
-        const part3 = quizData.vocabulary.map(q => ({ ...q, type: 'part3' }));
-        const part5 = quizData.sentenceCompletion.map(q => ({ ...q, type: 'part5' }));
-        questions = [...part3, ...part5];
+    } else if (mode === 'part5custom') {
+        questions = quizData.sentenceCompletionCustom.map(q => ({ ...q, type: 'part5' }));
+        // 打乱顺序
+        questions = shuffleArray(questions);
+        state.isPart5Mode = true;
+    } else if (mode === 'unit8') {
+        questions = quizData.unit8.map(q => ({ ...q, type: 'part5' }));
+        state.isPart5Mode = true;
+    } else if (mode === 'errorprone') {
+        questions = quizData.errorProne.map(q => ({ ...q, type: 'part5' }));
+        questions = shuffleArray(questions);
+        state.isPart5Mode = true;
+    } else if (mode === 'extra') {
+        questions = quizData.extra.map(q => ({ ...q, type: 'part5' }));
+        questions = shuffleArray(questions);
+        state.isPart5Mode = true;
+    } else if (mode === 'unit8en2cn') {
+        questions = quizData.unit8En2Cn.map(q => ({ ...q, type: 'en2cn' }));
+        questions = shuffleArray(questions);
         state.isPart5Mode = false;
     }
 
@@ -105,6 +121,13 @@ function renderQuestion(index) {
     hideElement(nextBtn);
     hideElement(submitBtn);
 
+    // 上一题按钮：第一题之后才显示
+    if (index > 0) {
+        showElement(prevBtn);
+    } else {
+        hideElement(prevBtn);
+    }
+
     // 更新进度
     const total = state.questions.length;
     progressText.textContent = `第 ${index + 1} / ${total} 题`;
@@ -115,6 +138,9 @@ function renderQuestion(index) {
     if (q.type === 'part3') {
         questionType.textContent = 'Part III · 词汇单选';
         questionType.className = 'question-type part3';
+    } else if (q.type === 'en2cn') {
+        questionType.textContent = 'Unit 8 · 英文选中文';
+        questionType.className = 'question-type part3';
     } else {
         questionType.textContent = 'Part V · 句子填空';
         questionType.className = 'question-type part5';
@@ -123,11 +149,16 @@ function renderQuestion(index) {
     questionNumber.textContent = `第 ${index + 1} 题`;
 
     // 渲染题目内容
-    const sentenceHtml = q.sentence.replace(/___/g, '<span class="blank-marker">______</span>');
-    questionContent.innerHTML = sentenceHtml;
+    if (q.type === 'en2cn') {
+        // 英文选中文：显示英文单词
+        questionContent.innerHTML = `<div class="en2cn-word">${q.word}</div>`;
+    } else {
+        const sentenceHtml = q.sentence.replace(/___/g, '<span class="blank-marker">______</span>');
+        questionContent.innerHTML = sentenceHtml;
+    }
 
     // 根据题型渲染
-    if (q.type === 'part3') {
+    if (q.type === 'part3' || q.type === 'en2cn') {
         renderOptions(q);
         hideElement(fillBlankContainer);
         showElement(submitBtn);
@@ -209,7 +240,7 @@ function submitAnswer() {
     let userAnswer;
     let isCorrect = false;
 
-    if (q.type === 'part3') {
+    if (q.type === 'part3' || q.type === 'en2cn') {
         if (selectedOption === -1) {
             alert('请先选择一个选项！');
             return;
@@ -237,7 +268,7 @@ function submitAnswer() {
         feedback.innerHTML = '✅ 回答正确！';
     } else {
         feedback.className = 'feedback incorrect';
-        const correctAnswer = q.type === 'part3'
+        const correctAnswer = (q.type === 'part3' || q.type === 'en2cn')
             ? q.options[q.answer].text
             : q.answer;
         feedback.innerHTML = `
@@ -247,13 +278,13 @@ function submitAnswer() {
         state.wrongQuestions.push({
             index: state.currentIndex,
             question: q,
-            userAnswer: q.type === 'part3' ? q.options[userAnswer]?.text : userAnswer,
-            correctAnswer: q.type === 'part3' ? q.options[q.answer].text : q.answer
+            userAnswer: (q.type === 'part3' || q.type === 'en2cn') ? q.options[userAnswer]?.text : userAnswer,
+            correctAnswer: (q.type === 'part3' || q.type === 'en2cn') ? q.options[q.answer].text : q.answer
         });
     }
 
     // 标记正确/错误样式
-    if (q.type === 'part3') {
+    if (q.type === 'part3' || q.type === 'en2cn') {
         const items = optionsContainer.querySelectorAll('.option-item');
         items.forEach((item, i) => {
             item.style.cursor = 'default';
@@ -292,6 +323,14 @@ function nextQuestion() {
     renderQuestion(state.currentIndex);
 }
 
+// ========== 上一题 ==========
+function prevQuestion() {
+    if (state.currentIndex <= 0) return;
+    state.currentIndex--;
+    selectedOption = -1;
+    renderQuestion(state.currentIndex);
+}
+
 // ========== 恢复已答状态 ==========
 function restoreAnswer(index, q) {
     const userAnswer = state.answers[index];
@@ -303,7 +342,7 @@ function restoreAnswer(index, q) {
     hideElement(submitBtn);
     showElement(nextBtn);
 
-    if (q.type === 'part3') {
+    if (q.type === 'part3' || q.type === 'en2cn') {
         const items = optionsContainer.querySelectorAll('.option-item');
         items.forEach((item, i) => {
             item.style.cursor = 'default';
@@ -318,11 +357,11 @@ function restoreAnswer(index, q) {
     }
 
     showElement(feedback);
-    const isCorrect = q.type === 'part3'
+    const isCorrect = (q.type === 'part3' || q.type === 'en2cn')
         ? userAnswer === q.answer
         : userAnswer.toLowerCase() === q.answer.toLowerCase();
     feedback.className = isCorrect ? 'feedback correct' : 'feedback incorrect';
-    const correctAnswer = q.type === 'part3' ? q.options[q.answer].text : q.answer;
+    const correctAnswer = (q.type === 'part3' || q.type === 'en2cn') ? q.options[q.answer].text : q.answer;
     feedback.innerHTML = isCorrect
         ? '✅ 回答正确！'
         : `❌ 回答错误<br><span class="correct-answer">正确答案：${correctAnswer}</span>`;
@@ -364,6 +403,7 @@ function showResult() {
     const details = $('resultDetails');
     const part3Count = state.questions.filter(q => q.type === 'part3').length;
     const part5Count = state.questions.filter(q => q.type === 'part5').length;
+    const en2cnCount = state.questions.filter(q => q.type === 'en2cn').length;
     const part3Correct = state.questions.filter((q, i) => {
         if (q.type !== 'part3') return false;
         return state.answers[i] === q.answer;
@@ -371,6 +411,10 @@ function showResult() {
     const part5Correct = state.questions.filter((q, i) => {
         if (q.type !== 'part5') return false;
         return state.answers[i]?.toLowerCase() === q.answer.toLowerCase();
+    }).length;
+    const en2cnCorrect = state.questions.filter((q, i) => {
+        if (q.type !== 'en2cn') return false;
+        return state.answers[i] === q.answer;
     }).length;
 
     details.innerHTML = `
@@ -399,6 +443,11 @@ function showResult() {
         <div class="result-detail-item">
             <span class="result-detail-label">Part V 句子填空</span>
             <span class="result-detail-value">${part5Correct}/${part5Count}</span>
+        </div>` : ''}
+        ${en2cnCount > 0 ? `
+        <div class="result-detail-item">
+            <span class="result-detail-label">英文选中文</span>
+            <span class="result-detail-value">${en2cnCorrect}/${en2cnCount}</span>
         </div>` : ''}
     `;
 }
@@ -443,6 +492,16 @@ document.addEventListener('keydown', (e) => {
         if (state.isPart5Mode && !state.isAnswered && $('answerInput') === document.activeElement) {
             submitAnswer();
         } else if (state.isAnswered && nextBtn.style.display !== 'none') {
+            nextQuestion();
+        }
+    }
+
+    // 左右方向键：上一题 / 下一题（避免与输入框冲突）
+    if (document.activeElement !== answerInput) {
+        if (e.key === 'ArrowLeft' && prevBtn.style.display !== 'none') {
+            prevQuestion();
+        }
+        if (e.key === 'ArrowRight' && state.isAnswered && nextBtn.style.display !== 'none') {
             nextQuestion();
         }
     }

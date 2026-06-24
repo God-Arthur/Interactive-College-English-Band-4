@@ -53,10 +53,22 @@
                             开始 Part III 练习
                         </button>
                         <button class="btn btn-secondary" onclick="startQuiz('part5')">
-                            开始 Part V 练习
+                            Part V（书本）
                         </button>
-                        <button class="btn btn-accent" onclick="startQuiz('full')">
-                            全套模拟 (Part III + Part V)
+                        <button class="btn btn-secondary" onclick="startQuiz('part5custom')">
+                            Part V（自造例句·全释义覆盖）
+                        </button>
+                        <button class="btn btn-secondary" onclick="startQuiz('unit8')">
+                            Unit 8 专项练习
+                        </button>
+                        <button class="btn btn-secondary" onclick="startQuiz('errorprone')">
+                            易错词专项练习
+                        </button>
+                        <button class="btn btn-secondary" onclick="startQuiz('extra')">
+                            额外词专项练习
+                        </button>
+                        <button class="btn btn-secondary" onclick="startQuiz('unit8en2cn')">
+                            Unit 8 英文选中文
                         </button>
                     </div>
                 </div>
@@ -83,8 +95,9 @@
                     </div>
                 </div>
 
-                <!-- 提交按钮 -->
+                <!-- 提交/导航按钮 -->
                 <div class="action-buttons" id="actionButtons">
+                    <button class="btn btn-prev" id="prevBtn" onclick="prevQuestion()" style="display:none;">← 上一题</button>
                     <button class="btn btn-submit" id="submitBtn" onclick="submitAnswer()" style="display:none;">提交答案</button>
                     <button class="btn btn-next" id="nextBtn" onclick="nextQuestion()" style="display:none;">下一题 →</button>
                 </div>
@@ -117,6 +130,11 @@
 
     <script src="part3_questions.js"></script>
     <script src="part5_questions.js"></script>
+    <script src="part5_custom_questions.js"></script>
+    <script src="unit8_questions.js"></script>
+    <script src="error_prone_questions.js"></script>
+    <script src="extra_questions.js"></script>
+    <script src="unit8_en2cn_questions.js"></script>
     <script src="data.js"></script>
     <script src="app.js"></script>
 </body>
