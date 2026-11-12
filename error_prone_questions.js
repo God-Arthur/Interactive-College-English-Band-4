@@ -118,7 +118,7 @@ const errorProneQuestions = [
   {
     sentence: "She stood by the window, c___ whether to accept the job offer.",
     hint: { letter: "c", chinese: "打算；想；考虑" },
-    answer: "contemplate",
+    answer: "contemplating",
     explanation: "contemplate 表示'沉思；考虑'，正式用语"
   },
   {
@@ -142,7 +142,7 @@ const errorProneQuestions = [
   {
     sentence: "The sudden noise p___ him to look up from his book.",
     hint: { letter: "p", chinese: "引起，激起（某人说或做某事）" },
-    answer: "prompt",
+    answer: "prompted",
     explanation: "prompt 作动词表示'促使；激起'，注意也可作形容词'迅速的'"
   },
   {
@@ -224,7 +224,7 @@ const errorProneQuestions = [
     explanation: "momentous 表示'重大的'，常含历史意义"
   },
   {
-    sentence: "The artifact is s___ to date back over two thousand years.",
+    sentence: "The artifact s___ dates back over two thousand years.",
     hint: { letter: "s", chinese: "据说；据称；一般相信" },
     answer: "supposedly",
     explanation: "supposedly 表示'据称'，含'据说但不一定属实'之意"

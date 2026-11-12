@@ -423,7 +423,7 @@ const part5Questions = [
     explanation: "★confess to doing sth. 坦白做了某事"
   },
   {
-    sentence: "They insist their business idea is o___ and will be wildly acceptable to customers.",
+    sentence: "They insist their business idea is o___ and will be widely accepted by customers.",
     hint: { letter: "o", chinese: "最佳的；最适宜的" },
     answer: "optimal",
     explanation: "★optimal (fml.) 最优的"

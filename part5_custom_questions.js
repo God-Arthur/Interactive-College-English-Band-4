@@ -6,7 +6,7 @@ const part5CustomQuestions = [
   {
     sentence: "Heavy rain on the picnic day completely s___ our plans for the family outing.",
     hint: { letter: "s", chinese: "毁掉；糟蹋；破坏" },
-    answer: "spoil",
+    answer: "spoiled",
     explanation: "spoil 指毁掉、破坏"
   },
   {
@@ -34,10 +34,10 @@ const part5CustomQuestions = [
     explanation: "recapture 表示重温或再次找回过去的感觉或品质。"
   },
   {
-    sentence: "Some students enjoy traveling abroad; others, m___, prefer to stay close to home.",
-    hint: { letter: "m", chinese: "而（强调两种情况之间的差异）" },
+    sentence: "The guests were still arriving; m___, the kitchen was racing to finish the first course.",
+    hint: { letter: "m", chinese: "与此同时；在此期间" },
     answer: "meanwhile",
-    explanation: "meanwhile 此处用于强调两种情况之间的对比。"
+    explanation: "meanwhile 表示与此同时、在此期间。"
   },
   {
     sentence: "The small bakery has grown o___ over many years through word-of-mouth recommendations.",
@@ -60,7 +60,7 @@ const part5CustomQuestions = [
   {
     sentence: "Each night shift in the ER is supervised by a senior doctor and assisted by two i___.",
     hint: { letter: "i", chinese: "实习医生" },
-    answer: "intern",
+    answer: "interns",
     explanation: "intern 此处取'实习医生'之义"
   },
   {
@@ -240,7 +240,7 @@ const part5CustomQuestions = [
   {
     sentence: "When the goalkeeper made the winning save, a wave of joy s___ through the crowd.",
     hint: { letter: "s", chinese: "突然涌动" },
-    answer: "surge",
+    answer: "surged",
     explanation: "surge 此处表示液体、电流或情感等迅速涌动。"
   },
   {
@@ -377,8 +377,8 @@ const part5CustomQuestions = [
   },
   {
     sentence: "Financially, you would be much b___ off paying off the credit card debt before investing in stocks.",
-    hint: { letter: "b", chinese: "更好的" },
-    answer: "better off",
+    hint: { letter: "b", chinese: "（better off）处境更好的" },
+    answer: "better",
     explanation: "better off 指处境更好的"
   },
   {
@@ -432,7 +432,7 @@ const part5CustomQuestions = [
   {
     sentence: "The sailors faced many p___ on their long voyage across the stormy ocean.",
     hint: { letter: "p", chinese: "（活动中的）危险" },
-    answer: "peril",
+    answer: "perils",
     explanation: "peril 首要义：某活动或情形中的具体危险"
   },
   {
@@ -630,7 +630,7 @@ const part5CustomQuestions = [
   {
     sentence: "A field of bright sunflowers s___ as far as the eye could see toward the distant hills.",
     hint: { letter: "s", chinese: "延伸；绵延" },
-    answer: "stretch",
+    answer: "stretched",
     explanation: "stretch 表示绵延、覆盖大片区域"
   },
   {
@@ -778,7 +778,7 @@ const part5CustomQuestions = [
     explanation: "artefact 指有历史价值的人工制品。"
   },
   {
-    sentence: "More young professionals today prefer a p___ to working for a single employer for life.",
+    sentence: "More young professionals today prefer a p___ c___ to working for a single employer for life.",
     hint: { letter: "p", chinese: "组合型职业" },
     answer: "portfolio career",
     explanation: "portfolio career 指同时拥有几份不同工作的组合型职业模式。"
@@ -786,7 +786,7 @@ const part5CustomQuestions = [
   {
     sentence: "With one powerful punch, the boxer f___ his opponent before the round was over.",
     hint: { letter: "f", chinese: "（用力）击倒" },
-    answer: "fell",
+    answer: "felled",
     explanation: "fell 首要义：用力将某人击倒"
   },
   {
@@ -840,7 +840,7 @@ const part5CustomQuestions = [
   {
     sentence: "Strange rock f___ in the canyon attract photographers from all over the country.",
     hint: { letter: "f", chinese: "（岩石或云朵的）形成物" },
-    answer: "formation",
+    answer: "formations",
     explanation: "formation 首要义：岩石或云朵形成的特定形状"
   },
   {
@@ -864,7 +864,7 @@ const part5CustomQuestions = [
   {
     sentence: "An old wooden cart slowly t___ down the bumpy country road before disappearing into the woods.",
     hint: { letter: "t", chinese: "（使）缓慢移动" },
-    answer: "trundle",
+    answer: "trundled",
     explanation: "trundle 表示靠轮子缓慢移动或推拉"
   },
   {
@@ -918,7 +918,7 @@ const part5CustomQuestions = [
   {
     sentence: "Every painting must be carefully a___ before it can be displayed in the gallery.",
     hint: { letter: "a", chinese: "将…登记入册（图书馆、博物馆等）" },
-    answer: "accession",
+    answer: "accessioned",
     explanation: "accession 表示将新物品登记入册"
   },
   {
@@ -1026,7 +1026,7 @@ const part5CustomQuestions = [
   {
     sentence: "The remote island is p___ by only a few hundred fishermen and their families.",
     hint: { letter: "p", chinese: "居住于" },
-    answer: "populate",
+    answer: "populated",
     explanation: "populate 表示居住于某地"
   },
   {
@@ -1044,7 +1044,7 @@ const part5CustomQuestions = [
   {
     sentence: "His long silence at dinner was i___ as a sign of disagreement by the rest of the family.",
     hint: { letter: "i", chinese: "把…理解（解释）为" },
-    answer: "interpret",
+    answer: "interpreted",
     explanation: "interpret 首要义：将某行为理解为某种含义"
   },
   {
@@ -1146,7 +1146,7 @@ const part5CustomQuestions = [
   {
     sentence: "She picked up an old ring i___ with the date of her grandparents' wedding.",
     hint: { letter: "i", chinese: "（在表面）雕刻；题写" },
-    answer: "inscribe",
+    answer: "inscribed",
     explanation: "inscribe 表示在物体表面雕刻、印制或题写文字"
   },
   {
@@ -1188,7 +1188,7 @@ const part5CustomQuestions = [
   {
     sentence: "She g___ at the noisy children, but they were too excited to notice her anger.",
     hint: { letter: "g", chinese: "怒目而视" },
-    answer: "glare",
+    answer: "glared",
     explanation: "glare 指怒目而视"
   },
   {
@@ -1212,7 +1212,7 @@ const part5CustomQuestions = [
   {
     sentence: "The camera comes with a number of useful a___, including an extra lens and a tripod.",
     hint: { letter: "a", chinese: "附件；附属品" },
-    answer: "accessory",
+    answer: "accessories",
     explanation: "accessory 次要义：增加机器或物品功能的附件"
   },
   {
@@ -1224,7 +1224,7 @@ const part5CustomQuestions = [
   {
     sentence: "The car's high-beam lights d___ the cyclist, who almost lost control on the narrow road.",
     hint: { letter: "d", chinese: "使目眩；使眼花" },
-    answer: "dazzle",
+    answer: "dazzled",
     explanation: "dazzle 次要义：因强光使人短时间看不清"
   },
   {
@@ -1242,7 +1242,7 @@ const part5CustomQuestions = [
   {
     sentence: "The cat a___ its back and hissed loudly at the unfamiliar dog approaching the door.",
     hint: { letter: "a", chinese: "（使）拱起；（使）成拱形" },
-    answer: "arch",
+    answer: "arched",
     explanation: "arch 指使成拱形"
   },
   {
@@ -1272,7 +1272,7 @@ const part5CustomQuestions = [
   {
     sentence: "More and more young women are turning to p___ surgery in pursuit of an ideal facial shape.",
     hint: { letter: "p", chinese: "整形手术；整形外科" },
-    answer: "plastic surgery",
+    answer: "plastic",
     explanation: "plastic surgery 指整形手术"
   },
   {
@@ -1314,7 +1314,7 @@ const part5CustomQuestions = [
   {
     sentence: "The old painting r___ at an auction house in Paris many years after it was reported missing.",
     hint: { letter: "r", chinese: "（遗失后）再次出现" },
-    answer: "resurface",
+    answer: "resurfaced",
     explanation: "resurface 次要义：遗失或失踪后再次出现"
   },
   {
@@ -1504,7 +1504,7 @@ const part5CustomQuestions = [
     explanation: "autonomous 此处表示能够独立工作并做决定的。"
   },
   {
-    sentence: "The mountain c___ in the distance looked like a sleeping dragon at sunset.",
+    sentence: "The c___ of the mountain in the distance looked like a sleeping dragon at sunset.",
     hint: { letter: "c", chinese: "外形；轮廓" },
     answer: "contour",
     explanation: "contour 指物体的外形或轮廓线。"
@@ -1512,7 +1512,7 @@ const part5CustomQuestions = [
   {
     sentence: "A small wooden boat d___ peacefully down the river under the bright moonlight.",
     hint: { letter: "d", chinese: "漂流；漂移" },
-    answer: "drift",
+    answer: "drifts",
     explanation: "drift 次要义：在水中或空中缓慢漂移"
   },
   {
@@ -1572,7 +1572,7 @@ const part5CustomQuestions = [
   {
     sentence: "In some countries, criminals convicted of treason can still be e___ by the state.",
     hint: { letter: "e", chinese: "(尤指依法)将…处死" },
-    answer: "execute",
+    answer: "executed",
     explanation: "execute 此处表示依法处死某人。"
   },
   {
@@ -1746,7 +1746,7 @@ const part5CustomQuestions = [
   {
     sentence: "Let me make myself c___ clear: this kind of behavior will not be tolerated again.",
     hint: { letter: "c", chinese: "明白的；无疑问的" },
-    answer: "crystal clear",
+    answer: "crystal",
     explanation: "crystal clear 指非常清楚、无疑问的"
   },
   {
@@ -1866,13 +1866,13 @@ const part5CustomQuestions = [
   {
     sentence: "She was completely d___ by the talent and beauty of the lead actress on the stage.",
     hint: { letter: "d", chinese: "使倾倒；使着迷" },
-    answer: "dazzle",
+    answer: "dazzled",
     explanation: "dazzle 首要义：使产生强烈的赞叹或仰慕"
   },
   {
     sentence: "He sat by the window for hours, quietly c___ the meaning of his recent failure.",
     hint: { letter: "c", chinese: "深思；细想" },
-    answer: "contemplate",
+    answer: "contemplating",
     explanation: "contemplate 此处取'深思、细想'之义"
   },
   {
@@ -1908,7 +1908,7 @@ const part5CustomQuestions = [
   {
     sentence: "The construction site hired more than fifty l___ to complete the project on time.",
     hint: { letter: "l", chinese: "体力劳动者；工人" },
-    answer: "laborer",
+    answer: "laborers",
     explanation: "laborer 指主要依靠体力劳动谋生的工人。"
   },
   {
@@ -2070,13 +2070,13 @@ const part5CustomQuestions = [
   {
     sentence: "On her knees, she i___ the judge to show mercy on her young son.",
     hint: { letter: "i", chinese: "恳求；乞求；哀求" },
-    answer: "implore",
+    answer: "implored",
     explanation: "implore 指恳求、哀求"
   },
   {
     sentence: "The students slowly d___ out of the classroom after the final lecture had ended.",
     hint: { letter: "d", chinese: "缓缓移动；缓慢行走" },
-    answer: "drift",
+    answer: "drifted",
     explanation: "drift 首要义：缓缓走动或移动"
   },
   {
@@ -2328,19 +2328,19 @@ const part5CustomQuestions = [
   {
     sentence: "Many devoted B___ visit Mount Wutai every year to pay their respects.",
     hint: { letter: "b", chinese: "佛教徒" },
-    answer: "buddhist",
+    answer: "Buddhists",
     explanation: "Buddhist 次要义：佛教徒"
   },
   {
     sentence: "Audiences were s___ by the dramatic plot twist near the end of the film.",
     hint: { letter: "s", chinese: "使（某人）震惊" },
-    answer: "stun",
+    answer: "stunned",
     explanation: "stun 指使人震惊、目瞪口呆"
   },
   {
     sentence: "Thousands of s___ filled the stadium to watch the final match.",
     hint: { letter: "s", chinese: "观众；观看者" },
-    answer: "spectator",
+    answer: "spectators",
     explanation: "spectator 指比赛或活动的观看者、观众"
   },
   {
@@ -2460,7 +2460,7 @@ const part5CustomQuestions = [
   {
     sentence: "They t___ the snowy mountain pass in just two days despite the freezing winds.",
     hint: { letter: "t", chinese: "跨过；穿过；横越" },
-    answer: "traverse",
+    answer: "traversed",
     explanation: "traverse 表示横越或穿过一片地区或水域"
   },
   {
@@ -2538,7 +2538,7 @@ const part5CustomQuestions = [
   {
     sentence: "Soft jazz music in the background nicely c___ the elegant atmosphere of the restaurant.",
     hint: { letter: "c", chinese: "补充；使相配；使完美" },
-    answer: "complement",
+    answer: "complements",
     explanation: "complement 表示与某物配合得当，使其更加完美。"
   },
   {
@@ -2550,7 +2550,7 @@ const part5CustomQuestions = [
   {
     sentence: "The viral video c___ the unknown singer to international stardom overnight.",
     hint: { letter: "c", chinese: "把…弹（射）出去；推送" },
-    answer: "catapult",
+    answer: "catapulted",
     explanation: "catapult 表示猛力推送或将某物射出"
   },
   {
@@ -2568,7 +2568,7 @@ const part5CustomQuestions = [
   {
     sentence: "After the concert ended, fans s___ toward the exit, eager to meet the lead singer.",
     hint: { letter: "s", chinese: "迅速涌动；蜂拥向前" },
-    answer: "surge",
+    answer: "surged",
     explanation: "surge 此处表示人群朝某个方向蜂拥而去。"
   },
   {
@@ -2646,7 +2646,7 @@ const part5CustomQuestions = [
   {
     sentence: "The thought of speaking in front of a large audience truly t___ him.",
     hint: { letter: "t", chinese: "使十分害怕；使惊吓" },
-    answer: "terrify",
+    answer: "terrifies",
     explanation: "terrify 表示使某人感到极度恐惧"
   },
   {
@@ -2676,7 +2676,7 @@ const part5CustomQuestions = [
   {
     sentence: "Free gym access and a company car are some of the most attractive p___ offered by the firm.",
     hint: { letter: "p", chinese: "（工资以外的）额外收入（待遇）；津贴" },
-    answer: "perk",
+    answer: "perks",
     explanation: "perk 指工资以外的额外待遇"
   },
   {
@@ -2692,7 +2692,7 @@ const part5CustomQuestions = [
     explanation: "dimension 此处取'大小、尺寸'之义"
   },
   {
-    sentence: "The crowd roared as the rookie player scored his very first s___ in the championship game.",
+    sentence: "The crowd roared as the rookie player scored his very first s___ d___ in the championship game.",
     hint: { letter: "s", chinese: "强力灌篮；扣篮" },
     answer: "slam dunk",
     explanation: "slam dunk 此处取'灌篮'之义"
@@ -2784,7 +2784,7 @@ const part5CustomQuestions = [
   {
     sentence: "The English word 'algebra' is d___ from an Arabic term used in ancient mathematics.",
     hint: { letter: "d", chinese: "源自；源于" },
-    answer: "derive",
+    answer: "derived",
     explanation: "derive 此处表示某物起源于、来自某处。"
   },
   {
@@ -2880,7 +2880,7 @@ const part5CustomQuestions = [
   {
     sentence: "Losing his childhood home was one of the deepest s___ of his life.",
     hint: { letter: "s", chinese: "令人悲伤的事；不幸" },
-    answer: "sorrow",
+    answer: "sorrows",
     explanation: "sorrow 首要义：令人悲伤的事情"
   },
   {
@@ -2976,7 +2976,7 @@ const part5CustomQuestions = [
   {
     sentence: "The tech firm installed several n___ pods in the lounge so that employees could grab a quick rest.",
     hint: { letter: "n", chinese: "小憩舱；打盹舱" },
-    answer: "nap pod",
+    answer: "nap",
     explanation: "nap pod 指供小憩的舱体"
   },
   {
@@ -3052,7 +3052,7 @@ const part5CustomQuestions = [
     explanation: "byproduct 此处指某行动产生的意外附带结果。"
   },
   {
-    sentence: "Many critics consider the album a s___ that will sweep the major awards next month.",
+    sentence: "Many critics consider the album a s___ d___ that will sweep the major awards next month.",
     hint: { letter: "s", chinese: "稳操胜券的事" },
     answer: "slam dunk",
     explanation: "slam dunk 此处取'稳操胜券的事'之义"
@@ -3078,7 +3078,7 @@ const part5CustomQuestions = [
   {
     sentence: "Without hesitating, the lifeguard d___ into the icy pool to rescue the struggling child.",
     hint: { letter: "d", chinese: "跳水" },
-    answer: "dive",
+    answer: "dived",
     explanation: "dive 指跳入水中"
   },
   {
@@ -3126,11 +3126,11 @@ const part5CustomQuestions = [
   {
     sentence: "When I asked him whether he had heard the news, he simply s___ his shoulders and walked away.",
     hint: { letter: "s", chinese: "耸（肩）（以示怀疑、与己无关、不知道等）" },
-    answer: "shrug",
+    answer: "shrugged",
     explanation: "shrug 指耸肩"
   },
   {
-    sentence: "Climbing Mount Everest has always been at the top of my b___ ever since I was a child.",
+    sentence: "Climbing Mount Everest has always been at the top of my b___ l___ ever since I was a child.",
     hint: { letter: "b", chinese: "人生心愿清单" },
     answer: "bucket list",
     explanation: "bucket list 指人在去世前希望完成的事情清单。"
@@ -3156,7 +3156,7 @@ const part5CustomQuestions = [
   {
     sentence: "He f___ the burger over the grill with a quick movement of his wrist.",
     hint: { letter: "f", chinese: "（使）快速翻转" },
-    answer: "flip",
+    answer: "flipped",
     explanation: "flip 指快速翻转"
   },
   {
@@ -3186,7 +3186,7 @@ const part5CustomQuestions = [
   {
     sentence: "The magazine takes on a few college i___ every summer to help with research and fact-checking.",
     hint: { letter: "i", chinese: "实习生" },
-    answer: "intern",
+    answer: "interns",
     explanation: "intern 此处取'实习生'之义"
   },
   {
@@ -3204,7 +3204,7 @@ const part5CustomQuestions = [
   {
     sentence: "A pair of car keys d___ from his belt as he walked through the office.",
     hint: { letter: "d", chinese: "悬垂；吊着" },
-    answer: "dangle",
+    answer: "dangled",
     explanation: "dangle 表示（使）悬垂、吊着、悬荡"
   },
   {
@@ -3234,7 +3234,7 @@ const part5CustomQuestions = [
   {
     sentence: "A short documentary p___ the live broadcast of the opening ceremony.",
     hint: { letter: "p", chinese: "先于…发生" },
-    answer: "precede",
+    answer: "precedes",
     explanation: "precede 表示在某事或某人之前发生或出现"
   },
   {
@@ -3276,7 +3276,7 @@ const part5CustomQuestions = [
   {
     sentence: "She bought a matching scarf and a few other a___ to complete her outfit.",
     hint: { letter: "a", chinese: "小配件（手袋、首饰等）" },
-    answer: "accessory",
+    answer: "accessories",
     explanation: "accessory 首要义：作为装饰的小配件"
   },
   {
@@ -3316,7 +3316,7 @@ const part5CustomQuestions = [
     explanation: "predictive 形容能够预测未来情况的。"
   },
   {
-    sentence: "The pituitary g___ is sometimes called the master gland because it controls many others.",
+    sentence: "The pituitary g___ controls many other hormone-producing organs, which is why doctors sometimes call it the master one.",
     hint: { letter: "g", chinese: "腺" },
     answer: "gland",
     explanation: "gland 指能分泌特定物质的腺体。"

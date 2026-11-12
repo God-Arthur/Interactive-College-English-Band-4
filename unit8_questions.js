@@ -12,8 +12,8 @@ const unit8Questions = [
   {
     sentence: "The botanist carefully examined the c___ of the flower under a magnifying glass.",
     hint: { letter: "c", chinese: "花萼" },
-    answer: "calix",
-    explanation: "calix 表示'花萼'，同 calyx，指花的外部绿色包裹部分"
+    answer: "calyx",
+    explanation: "calyx 表示'花萼'，指花的外部绿色包裹部分"
   },
   {
     sentence: "The rare orchid remained e___ despite the botanist's weeks of searching in the jungle.",
@@ -24,8 +24,8 @@ const unit8Questions = [
   {
     sentence: "The edges of the pond were lined with p___, their purple flowers attracting many butterflies.",
     hint: { letter: "p", chinese: "梭鱼草" },
-    answer: "pondedera",
-    explanation: "pondedera 表示'梭鱼草'，一种水生植物"
+    answer: "pontederia",
+    explanation: "pontederia 表示'梭鱼草'（雨久花属），一种水生植物"
   },
   {
     sentence: "The total solar eclipse was a breathtaking s___ that attracted thousands of observers.",
@@ -78,7 +78,7 @@ const unit8Questions = [
   {
     sentence: "The harsh critic m___ the young actor's performance in his weekly column.",
     hint: { letter: "m", chinese: "嘲弄；（通过模仿）取笑" },
-    answer: "mock",
+    answer: "mocks",
     explanation: "mock 表示'嘲弄；取笑'，指以不友善的方式嘲笑某人，尤指模仿"
   },
   {
@@ -126,7 +126,7 @@ const unit8Questions = [
   {
     sentence: "Thousands of excited fans s___ around the pop star's car as it pulled up to the venue.",
     hint: { letter: "s", chinese: "（人、动物等）成群地来回移动" },
-    answer: "swarm",
+    answer: "swarmed",
     explanation: "swarm 表示'成群地来回移动'，指人或动物大量聚集移动"
   },
   {
@@ -474,7 +474,7 @@ const unit8Questions = [
   {
     sentence: "The spokesman h___ to deny the rumors before they could spread further.",
     hint: { letter: "h", chinese: "赶紧做（或说）" },
-    answer: "hasten",
+    answer: "hastened",
     explanation: "hasten 作不及物动词表示'赶紧做（或说）'，指迅速行动或说话"
   },
   {
@@ -534,7 +534,7 @@ const unit8Questions = [
   {
     sentence: "The terrified passenger c___ the armrest tightly as the plane hit a pocket of turbulence.",
     hint: { letter: "c", chinese: "紧握；紧抓" },
-    answer: "clutch",
+    answer: "clutched",
     explanation: "clutch 表示'紧握；紧抓'，指因不想失去某物而紧紧握住"
   },
   {
@@ -558,7 +558,7 @@ const unit8Questions = [
   {
     sentence: "The cruel owner a___ his dog on the highway and drove away without looking back.",
     hint: { letter: "a", chinese: "抛弃；遗弃" },
-    answer: "abandon",
+    answer: "abandoned",
     explanation: "abandon 表示'抛弃；遗弃'，指在应留下照顾时离开某人"
   },
   {
@@ -568,7 +568,7 @@ const unit8Questions = [
     explanation: "punctual 表示'按时的；准时的'，指在约定的时间到达或发生"
   },
   {
-    sentence: "The m___ of the wheat into fine flour takes several hours at the old stone mill.",
+    sentence: "The m___ of the wheat into fine flour takes several hours.",
     hint: { letter: "m", chinese: "磨粉" },
     answer: "mill",
     explanation: "mill 作不可数名词表示'磨粉'，指将谷物磨成粉的过程"
@@ -606,7 +606,7 @@ const unit8Questions = [
   {
     sentence: "The surface of the calm lake s___ softly under the pale light of the moon.",
     hint: { letter: "s", chinese: "发微光；闪闪发亮" },
-    answer: "shimmer",
+    answer: "shimmers",
     explanation: "shimmer 表示'发微光；闪闪发亮'，指发出柔和且似乎微微颤动的光"
   },
   {
@@ -714,7 +714,7 @@ const unit8Questions = [
   {
     sentence: "After hearing the shocking news, she a___ herself to grief and could not speak.",
     hint: { letter: "a", chinese: "陷入（某种感情）" },
-    answer: "abandon",
+    answer: "abandoned",
     explanation: "abandon oneself to sth. 表示'陷入（某种感情）'，指完全沉溺于某种情绪"
   },
   {
@@ -760,7 +760,7 @@ const unit8Questions = [
     explanation: "elixir 表示'灵丹妙药；不老药'，指传说中能治病或使人年轻的神奇液体"
   },
   {
-    sentence: "The latchkey kid wore his l___ on a string around his neck so he would not lose it.",
+    sentence: "The child wore his house l___ on a string around his neck so he would not lose it.",
     hint: { letter: "l", chinese: "（房子或公寓大门的）碰锁钥匙" },
     answer: "latchkey",
     explanation: "latchkey 表示'碰锁钥匙'，指房屋或公寓大门的弹簧锁钥匙"
@@ -780,7 +780,7 @@ const unit8Questions = [
   {
     sentence: "The frightened girl c___ her mother's hand tightly as they walked through the dark forest.",
     hint: { letter: "c", chinese: "握紧；抱紧" },
-    answer: "clasp",
+    answer: "clasped",
     explanation: "clasp 表示'握紧；抱紧'，指用手紧紧抓住某人或某物"
   },
   {
@@ -798,7 +798,7 @@ const unit8Questions = [
   {
     sentence: "Villagers believe that the ruined church is h___ by the ghost of a medieval knight.",
     hint: { letter: "h", chinese: "（鬼魂）经常出没于" },
-    answer: "haunt",
+    answer: "haunted",
     explanation: "haunt 表示'（鬼魂）经常出没于'，指亡魂常在某处出现"
   },
   {
