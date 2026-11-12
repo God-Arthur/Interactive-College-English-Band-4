@@ -719,7 +719,7 @@ const part3Questions = [
     explanation: "accuse sb. of sth. 意为'指控、指责'。"
   },
   {
-    sentence: "They insist their business idea is ___ and will be wildly acceptable to customers.",
+    sentence: "They insist their business idea is ___ and will be widely accepted by customers.",
     options: [
       { text: "rigid", correct: false },
       { text: "alien", correct: false },
@@ -829,7 +829,7 @@ const part3Questions = [
     explanation: "incentive 意为'刺激、动力、鼓励'。"
   },
   {
-    sentence: "Cultivating a positive mental attitude toward yourself can reap tremendous benefits.",
+    sentence: "___ a positive mental attitude toward yourself can reap tremendous benefits.",
     options: [
       { text: "Possessing", correct: false },
       { text: "Imploring", correct: false },

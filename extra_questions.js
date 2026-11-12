@@ -86,7 +86,7 @@ const extraQuestions = [
   {
     sentence: "She tends to b___ toward classical music rather than pop.",
     hint: { letter: "b", chinese: "倾向于" },
-    answer: "bend toward",
+    answer: "bend",
     explanation: "bend toward 表示'倾向于'"
   },
   {
@@ -96,8 +96,8 @@ const extraQuestions = [
     explanation: "giant 此处取'巨头'义，非'巨人'"
   },
   {
-    sentence: "The c___ between the two fields is gradually disappearing.",
-    hint: { letter: "c", chinese: " collapsing 的修饰，倒塌的" },
+    sentence: "The c___ b___ between the two fields is gradually disappearing.",
+    hint: { letter: "c", chinese: "正在倒塌的壁垒" },
     answer: "collapsing barrier",
     explanation: "collapsing barrier 表示'正在倒塌的壁垒'"
   },
@@ -378,7 +378,7 @@ const extraQuestions = [
   {
     sentence: "The storm d___ traffic across the entire region.",
     hint: { letter: "d", chinese: "扰乱；中断" },
-    answer: "disrupt",
+    answer: "disrupted",
     explanation: "disrupt 表示'打乱；扰乱'"
   },
   {
@@ -502,7 +502,7 @@ const extraQuestions = [
   {
     sentence: "Medical a___ in recent decades have saved countless lives.",
     hint: { letter: "a", chinese: "进步；进展" },
-    answer: "advance",
+    answer: "advances",
     explanation: "advance 表示'进步'"
   },
   {
@@ -588,7 +588,7 @@ const extraQuestions = [
   {
     sentence: "The coach u___ the team to push harder in the final lap.",
     hint: { letter: "u", chinese: "催促；强烈要求" },
-    answer: "urge",
+    answer: "urged",
     explanation: "urge 表示'敦促'"
   },
   {

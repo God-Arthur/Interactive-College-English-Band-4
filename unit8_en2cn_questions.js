@@ -17,9 +17,9 @@ const unit8En2CnQuestions = [
   {
     word: "flake",
     options: [
-      { text: "鸟）鸣啭", correct: false },
+      { text: "（鸟）鸣啭", correct: false },
       { text: "按时的；准时的", correct: false },
-      { text: "鬼魂）经常出没于", correct: false },
+      { text: "（鬼魂）经常出没于", correct: false },
       { text: "薄片", correct: true }
     ],
     answer: 3,
@@ -30,8 +30,8 @@ const unit8En2CnQuestions = [
     options: [
       { text: "按时的；准时的", correct: true },
       { text: "友好的；善良的", correct: false },
-      { text: "那边的）；在远处（的）", correct: false },
-      { text: "座位、房间）空的，未被占用的", correct: false }
+      { text: "（那边的）；在远处（的）", correct: false },
+      { text: "（座位、房间）空的，未被占用的", correct: false }
     ],
     answer: 0,
     explanation: "punctual：按时的；准时的"
@@ -50,7 +50,7 @@ const unit8En2CnQuestions = [
   {
     word: "tint",
     options: [
-      { text: "传统）手工工艺", correct: false },
+      { text: "（传统）手工工艺", correct: false },
       { text: "胜利；成功；成就", correct: false },
       { text: "暴乱；骚乱", correct: false },
       { text: "浅色；淡色调", correct: true }
@@ -64,27 +64,27 @@ const unit8En2CnQuestions = [
       { text: "使…蒙上白霜", correct: false },
       { text: "骚乱地；骚动地；混乱地；激动地", correct: false },
       { text: "改变；调整", correct: false },
-      { text: "人、动物等）成群地来回移动", correct: true }
+      { text: "（人、动物等）成群地来回移动", correct: true }
     ],
     answer: 3,
-    explanation: "swarm：人、动物等）成群地来回移动"
+    explanation: "swarm：（人、动物等）成群地来回移动"
   },
   {
     word: "illumination",
     options: [
-      { text: "对某一主题的）阐明，理解", correct: true },
-      { text: "座位、房间）空的，未被占用的", correct: false },
-      { text: "威胁、攻击或警告）隐含的，不明言的", correct: false },
+      { text: "（对某一主题的）阐明，理解", correct: true },
+      { text: "（座位、房间）空的，未被占用的", correct: false },
+      { text: "（威胁、攻击或警告）隐含的，不明言的", correct: false },
       { text: "崇拜；崇拜；把…神化；把…奉若神明", correct: false }
     ],
     answer: 0,
-    explanation: "illumination：对某一主题的）阐明，理解"
+    explanation: "illumination：（对某一主题的）阐明，理解"
   },
   {
     word: "abandonment",
     options: [
       { text: "从…下来；下降", correct: false },
-      { text: "使）膨胀；（使）扩大", correct: false },
+      { text: "（使）膨胀；（使）扩大", correct: false },
       { text: "放任；放纵", correct: true },
       { text: "漂流；飘动", correct: false }
     ],
@@ -96,7 +96,7 @@ const unit8En2CnQuestions = [
     options: [
       { text: "勤奋；用功", correct: true },
       { text: "特别激动的；极度兴奋的", correct: false },
-      { text: "食物）软的，嫩的，易咀嚼的", correct: false },
+      { text: "（食物）软的，嫩的，易咀嚼的", correct: false },
       { text: "茫然的；失神的", correct: false }
     ],
     answer: 0,
@@ -130,7 +130,7 @@ const unit8En2CnQuestions = [
       { text: "苗条的；修长的；纤细的", correct: false },
       { text: "陷入（某种感情）", correct: true },
       { text: "必要的；需要的", correct: false },
-      { text: "人、动物等）成群地来回移动", correct: false }
+      { text: "（人、动物等）成群地来回移动", correct: false }
     ],
     answer: 1,
     explanation: "abandon：陷入（某种感情）"
@@ -140,17 +140,17 @@ const unit8En2CnQuestions = [
     options: [
       { text: "恐惧；惊恐", correct: false },
       { text: "凝视；注视", correct: false },
-      { text: "一棵树上的）花，全部花朵", correct: true },
+      { text: "（一棵树上的）花，全部花朵", correct: true },
       { text: "显贵的；高贵的", correct: false }
     ],
     answer: 2,
-    explanation: "blossom：一棵树上的）花，全部花朵"
+    explanation: "blossom：（一棵树上的）花，全部花朵"
   },
   {
     word: "mystic",
     options: [
       { text: "神奇的；神秘的", correct: true },
-      { text: "食物）软的，嫩的，易咀嚼的", correct: false },
+      { text: "（食物）软的，嫩的，易咀嚼的", correct: false },
       { text: "特别激动的；极度兴奋的", correct: false },
       { text: "必要的；需要的", correct: false }
     ],
@@ -160,13 +160,13 @@ const unit8En2CnQuestions = [
   {
     word: "din",
     options: [
-      { text: "持久的）嘈杂声，喧闹声", correct: true },
+      { text: "（持久的）嘈杂声，喧闹声", correct: true },
       { text: "赶紧做（或说）", correct: false },
       { text: "发微光；闪闪发亮", correct: false },
       { text: "一连串，一系列（同类型的人或物）", correct: false }
     ],
     answer: 0,
-    explanation: "din：持久的）嘈杂声，喧闹声"
+    explanation: "din：（持久的）嘈杂声，喧闹声"
   },
   {
     word: "clutch",
@@ -193,7 +193,7 @@ const unit8En2CnQuestions = [
   {
     word: "sob",
     options: [
-      { text: "鬼魂）经常出没于", correct: false },
+      { text: "（鬼魂）经常出没于", correct: false },
       { text: "抽噎（声）；啜泣（声）；呜咽（声）", correct: true },
       { text: "气味；（尤指）香味", correct: false },
       { text: "预兆", correct: false }
@@ -260,7 +260,7 @@ const unit8En2CnQuestions = [
     word: "suspension",
     options: [
       { text: "缠扰；纠缠", correct: false },
-      { text: "与周围部分不同的）小片，小块", correct: false },
+      { text: "（与周围部分不同的）小片，小块", correct: false },
       { text: "光亮；照明", correct: false },
       { text: "暂停；中止", correct: true }
     ],
@@ -272,16 +272,16 @@ const unit8En2CnQuestions = [
     options: [
       { text: "隐瞒；掩盖", correct: false },
       { text: "胜利；成功；成就", correct: false },
-      { text: "与周围部分不同的）小片，小块", correct: true },
+      { text: "（与周围部分不同的）小片，小块", correct: true },
       { text: "安详；休息", correct: false }
     ],
     answer: 2,
-    explanation: "patch：与周围部分不同的）小片，小块"
+    explanation: "patch：（与周围部分不同的）小片，小块"
   },
   {
     word: "piercing",
     options: [
-      { text: "传统）手工工艺", correct: false },
+      { text: "（传统）手工工艺", correct: false },
       { text: "参加；参与", correct: false },
       { text: "敏锐的；有洞察力的", correct: true },
       { text: "发烧的；发热的", correct: false }
@@ -304,20 +304,20 @@ const unit8En2CnQuestions = [
     word: "veiled",
     options: [
       { text: "暴乱；骚乱", correct: false },
-      { text: "威胁、攻击或警告）隐含的，不明言的", correct: true },
+      { text: "（威胁、攻击或警告）隐含的，不明言的", correct: true },
       { text: "迷人；魅力", correct: false },
       { text: "胜利；成功；成就", correct: false }
     ],
     answer: 1,
-    explanation: "veiled：威胁、攻击或警告）隐含的，不明言的"
+    explanation: "veiled：（威胁、攻击或警告）隐含的，不明言的"
   },
   {
     word: "triumph",
     options: [
-      { text: "动植物的)族，群", correct: false },
+      { text: "（动植物的）族，群", correct: false },
       { text: "极端错误的；道德败坏的；极不公正的", correct: false },
       { text: "胜利；成功；成就", correct: true },
-      { text: "对某一主题的）阐明，理解", correct: false }
+      { text: "（对某一主题的）阐明，理解", correct: false }
     ],
     answer: 2,
     explanation: "triumph：胜利；成功；成就"
@@ -339,7 +339,7 @@ const unit8En2CnQuestions = [
       { text: "哭泣；流泪", correct: false },
       { text: "参加；参与", correct: true },
       { text: "神奇的；神秘的", correct: false },
-      { text: "食物）软的，嫩的，易咀嚼的", correct: false }
+      { text: "（食物）软的，嫩的，易咀嚼的", correct: false }
     ],
     answer: 1,
     explanation: "partake：参加；参与"
@@ -358,7 +358,7 @@ const unit8En2CnQuestions = [
   {
     word: "perpetual",
     options: [
-      { text: "一棵树上的）花，全部花朵", correct: false },
+      { text: "（一棵树上的）花，全部花朵", correct: false },
       { text: "长期的；永恒的", correct: true },
       { text: "内心的；精神的", correct: false },
       { text: "哭泣；流泪", correct: false }
@@ -370,12 +370,12 @@ const unit8En2CnQuestions = [
     word: "craft",
     options: [
       { text: "嘲弄；（通过模仿）取笑", correct: false },
-      { text: "传统）手工工艺", correct: true },
+      { text: "（传统）手工工艺", correct: true },
       { text: "紧握；紧抓", correct: false },
-      { text: "动植物的)族，群", correct: false }
+      { text: "（动植物的）族，群", correct: false }
     ],
     answer: 1,
-    explanation: "craft：传统）手工工艺"
+    explanation: "craft：（传统）手工工艺"
   },
   {
     word: "inward",
@@ -425,18 +425,18 @@ const unit8En2CnQuestions = [
     word: "twitter",
     options: [
       { text: "深红色的；绯红色的", correct: false },
-      { text: "鸟）鸣啭", correct: true },
+      { text: "（鸟）鸣啭", correct: true },
       { text: "幻景；海市蜃楼", correct: false },
       { text: "友好的；善良的", correct: false }
     ],
     answer: 1,
-    explanation: "twitter：鸟）鸣啭"
+    explanation: "twitter：（鸟）鸣啭"
   },
   {
     word: "genial",
     options: [
       { text: "胜利；成功；成就", correct: false },
-      { text: "人、动物等）成群地来回移动", correct: false },
+      { text: "（人、动物等）成群地来回移动", correct: false },
       { text: "友好的；善良的", correct: true },
       { text: "暴乱；骚乱", correct: false }
     ],
@@ -446,7 +446,7 @@ const unit8En2CnQuestions = [
   {
     word: "tender",
     options: [
-      { text: "对感情的）抑制，压抑", correct: false },
+      { text: "（对感情的）抑制，压抑", correct: false },
       { text: "必要的；需要的", correct: false },
       { text: "漂流；飘动", correct: false },
       { text: "温柔的；体贴入微的", correct: true }
@@ -471,10 +471,10 @@ const unit8En2CnQuestions = [
       { text: "限制，束缚（某人或某事物的发展）", correct: false },
       { text: "忍住；克制", correct: false },
       { text: "改变；调整", correct: false },
-      { text: "座位、房间）空的，未被占用的", correct: true }
+      { text: "（座位、房间）空的，未被占用的", correct: true }
     ],
     answer: 3,
-    explanation: "vacant：座位、房间）空的，未被占用的"
+    explanation: "vacant：（座位、房间）空的，未被占用的"
   },
   {
     word: "feverish",
@@ -536,8 +536,8 @@ const unit8En2CnQuestions = [
     options: [
       { text: "华典；盛典；盛况", correct: true },
       { text: "部落", correct: false },
-      { text: "人、动物等）成群地来回移动", correct: false },
-      { text: "那边的）；在远处（的）", correct: false }
+      { text: "（人、动物等）成群地来回移动", correct: false },
+      { text: "（那边的）；在远处（的）", correct: false }
     ],
     answer: 0,
     explanation: "pomp：华典；盛典；盛况"
@@ -547,7 +547,7 @@ const unit8En2CnQuestions = [
     options: [
       { text: "参加；参与", correct: false },
       { text: "一连串的人（或物）", correct: true },
-      { text: "威胁、攻击或警告）隐含的，不明言的", correct: false },
+      { text: "（威胁、攻击或警告）隐含的，不明言的", correct: false },
       { text: "脉搏", correct: false }
     ],
     answer: 1,
@@ -558,7 +558,7 @@ const unit8En2CnQuestions = [
     options: [
       { text: "按时的；准时的", correct: false },
       { text: "缄默的；无声的", correct: false },
-      { text: "鸟）鸣啭", correct: false },
+      { text: "（鸟）鸣啭", correct: false },
       { text: "筋疲力尽；疲惫不堪", correct: true }
     ],
     answer: 3,
@@ -602,7 +602,7 @@ const unit8En2CnQuestions = [
     options: [
       { text: "界限；范围", correct: false },
       { text: "浅色；淡色调", correct: false },
-      { text: "人、动物等）成群地来回移动", correct: false },
+      { text: "（人、动物等）成群地来回移动", correct: false },
       { text: "崇拜；崇拜；把…神化；把…奉若神明", correct: true }
     ],
     answer: 3,
@@ -711,18 +711,18 @@ const unit8En2CnQuestions = [
     word: "tribe",
     options: [
       { text: "预兆", correct: false },
-      { text: "动植物的)族，群", correct: true },
+      { text: "（动植物的）族，群", correct: true },
       { text: "紧握；紧抓", correct: false },
       { text: "放任；放纵", correct: false }
     ],
     answer: 1,
-    explanation: "tribe：动植物的)族，群"
+    explanation: "tribe：（动植物的）族，群"
   },
   {
     word: "conspire",
     options: [
       { text: "战栗；颤抖", correct: false },
-      { text: "对感情的）抑制，压抑", correct: false },
+      { text: "（对感情的）抑制，压抑", correct: false },
       { text: "搞阴谋；密谋", correct: true },
       { text: "陷入（某种感情）", correct: false }
     ],
@@ -787,7 +787,7 @@ const unit8En2CnQuestions = [
   {
     word: "exalted",
     options: [
-      { text: "动植物的)族，群", correct: false },
+      { text: "（动植物的）族，群", correct: false },
       { text: "兴高采烈的；得意洋洋的", correct: true },
       { text: "按时的；准时的", correct: false },
       { text: "尖锐的；刺耳的", correct: false }
@@ -831,9 +831,9 @@ const unit8En2CnQuestions = [
   {
     word: "abandon",
     options: [
-      { text: "动植物的)族，群", correct: false },
+      { text: "（动植物的）族，群", correct: false },
       { text: "抛弃；遗弃", correct: true },
-      { text: "持久的）嘈杂声，喧闹声", correct: false },
+      { text: "（持久的）嘈杂声，喧闹声", correct: false },
       { text: "深红色的；绯红色的", correct: false }
     ],
     answer: 1,
@@ -845,7 +845,7 @@ const unit8En2CnQuestions = [
       { text: "发烧的；发热的", correct: true },
       { text: "尖锐的；刺耳的", correct: false },
       { text: "茫然的；失神的", correct: false },
-      { text: "传统）手工工艺", correct: false }
+      { text: "（传统）手工工艺", correct: false }
     ],
     answer: 0,
     explanation: "feverish：发烧的；发热的"
@@ -922,7 +922,7 @@ const unit8En2CnQuestions = [
       { text: "友好的；善良的", correct: false },
       { text: "坚持；执着；执意", correct: true },
       { text: "跪着；跪下", correct: false },
-      { text: "使）膨胀；（使）扩大", correct: false }
+      { text: "（使）膨胀；（使）扩大", correct: false }
     ],
     answer: 1,
     explanation: "persistence：坚持；执着；执意"
@@ -933,10 +933,10 @@ const unit8En2CnQuestions = [
       { text: "战栗；颤抖", correct: false },
       { text: "发微光；闪闪发亮", correct: false },
       { text: "极端错误的；道德败坏的；极不公正的", correct: false },
-      { text: "那边的）；在远处（的）", correct: true }
+      { text: "（那边的）；在远处（的）", correct: true }
     ],
     answer: 3,
-    explanation: "yonder：那边的）；在远处（的）"
+    explanation: "yonder：（那边的）；在远处（的）"
   },
   {
     word: "mock",
@@ -955,10 +955,10 @@ const unit8En2CnQuestions = [
       { text: "界限；范围", correct: false },
       { text: "壮观的景象；奇观", correct: false },
       { text: "参加；参与", correct: false },
-      { text: "食物）软的，嫩的，易咀嚼的", correct: true }
+      { text: "（食物）软的，嫩的，易咀嚼的", correct: true }
     ],
     answer: 3,
-    explanation: "tender：食物）软的，嫩的，易咀嚼的"
+    explanation: "tender：（食物）软的，嫩的，易咀嚼的"
   },
   {
     word: "gloom",
@@ -987,7 +987,7 @@ const unit8En2CnQuestions = [
     options: [
       { text: "紧握；紧抓", correct: false },
       { text: "装饰品；点缀品", correct: false },
-      { text: "鬼魂）经常出没于", correct: false },
+      { text: "（鬼魂）经常出没于", correct: false },
       { text: "使…蒙上白霜", correct: true }
     ],
     answer: 3,
@@ -997,7 +997,7 @@ const unit8En2CnQuestions = [
     word: "behold",
     options: [
       { text: "看；看见", correct: true },
-      { text: "威胁、攻击或警告）隐含的，不明言的", correct: false },
+      { text: "（威胁、攻击或警告）隐含的，不明言的", correct: false },
       { text: "限制，束缚（某人或某事物的发展）", correct: false },
       { text: "赶紧做（或说）", correct: false }
     ],
@@ -1031,7 +1031,7 @@ const unit8En2CnQuestions = [
     options: [
       { text: "有害的；有毒的", correct: true },
       { text: "苗条的；修长的；纤细的", correct: false },
-      { text: "人、动物等）成群地来回移动", correct: false },
+      { text: "（人、动物等）成群地来回移动", correct: false },
       { text: "预先阻止；在（他人）之前行动；先发制人", correct: false }
     ],
     answer: 0,
@@ -1040,10 +1040,10 @@ const unit8En2CnQuestions = [
   {
     word: "crimson",
     options: [
-      { text: "威胁、攻击或警告）隐含的，不明言的", correct: false },
+      { text: "（威胁、攻击或警告）隐含的，不明言的", correct: false },
       { text: "脉搏", correct: false },
       { text: "深红色的；绯红色的", correct: true },
-      { text: "持久的）嘈杂声，喧闹声", correct: false }
+      { text: "（持久的）嘈杂声，喧闹声", correct: false }
     ],
     answer: 2,
     explanation: "crimson：深红色的；绯红色的"
@@ -1097,7 +1097,7 @@ const unit8En2CnQuestions = [
     options: [
       { text: "茫然的；失神的", correct: false },
       { text: "使变样；改变", correct: false },
-      { text: "那边的）；在远处（的）", correct: false },
+      { text: "（那边的）；在远处（的）", correct: false },
       { text: "界限；范围", correct: true }
     ],
     answer: 3,
@@ -1120,7 +1120,7 @@ const unit8En2CnQuestions = [
       { text: "兴高采烈的；得意洋洋的", correct: false },
       { text: "安详；休息", correct: false },
       { text: "凝视；注视", correct: true },
-      { text: "一棵树上的）花，全部花朵", correct: false }
+      { text: "（一棵树上的）花，全部花朵", correct: false }
     ],
     answer: 2,
     explanation: "gaze：凝视；注视"
@@ -1163,11 +1163,11 @@ const unit8En2CnQuestions = [
     options: [
       { text: "壮丽；灿烂", correct: false },
       { text: "细微的；微妙的；难以察觉的", correct: false },
-      { text: "对感情的）抑制，压抑", correct: true },
+      { text: "（对感情的）抑制，压抑", correct: true },
       { text: "身体的；肉体的", correct: false }
     ],
     answer: 2,
-    explanation: "repression：对感情的）抑制，压抑"
+    explanation: "repression：（对感情的）抑制，压抑"
   },
   {
     word: "cramp",
@@ -1194,24 +1194,24 @@ const unit8En2CnQuestions = [
   {
     word: "dilate",
     options: [
-      { text: "使）膨胀；（使）扩大", correct: true },
+      { text: "（使）膨胀；（使）扩大", correct: true },
       { text: "镇静地", correct: false },
       { text: "尖锐的；刺耳的", correct: false },
       { text: "刺入；刺穿；刺破", correct: false }
     ],
     answer: 0,
-    explanation: "dilate：使）膨胀；（使）扩大"
+    explanation: "dilate：（使）膨胀；（使）扩大"
   },
   {
     word: "wares",
     options: [
       { text: "拒绝考虑；不理会", correct: false },
       { text: "一连串的人（或物）", correct: false },
-      { text: "一般不在商店内出售的）商品，货物", correct: true },
+      { text: "（一般不在商店内出售的）商品，货物", correct: true },
       { text: "仅仅的，只不过（用于强调微小或微不足道）", correct: false }
     ],
     answer: 2,
-    explanation: "wares：一般不在商店内出售的）商品，货物"
+    explanation: "wares：（一般不在商店内出售的）商品，货物"
   },
   {
     word: "transformation",
@@ -1227,18 +1227,18 @@ const unit8En2CnQuestions = [
   {
     word: "haunt",
     options: [
-      { text: "使）膨胀；（使）扩大", correct: false },
+      { text: "（使）膨胀；（使）扩大", correct: false },
       { text: "按时的；准时的", correct: false },
       { text: "显示；表示", correct: false },
-      { text: "鬼魂）经常出没于", correct: true }
+      { text: "（鬼魂）经常出没于", correct: true }
     ],
     answer: 3,
-    explanation: "haunt：鬼魂）经常出没于"
+    explanation: "haunt：（鬼魂）经常出没于"
   },
   {
     word: "glory",
     options: [
-      { text: "传统）手工工艺", correct: false },
+      { text: "（传统）手工工艺", correct: false },
       { text: "赶紧做（或说）", correct: false },
       { text: "壮丽；灿烂", correct: true },
       { text: "筋疲力尽；疲惫不堪", correct: false }
@@ -1261,7 +1261,7 @@ const unit8En2CnQuestions = [
     word: "forestall",
     options: [
       { text: "预先阻止；在（他人）之前行动；先发制人", correct: true },
-      { text: "动植物的)族，群", correct: false },
+      { text: "（动植物的）族，群", correct: false },
       { text: "温柔的；体贴入微的", correct: false },
       { text: "苗条的；修长的；纤细的", correct: false }
     ],
